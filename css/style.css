@@ -1,0 +1,108 @@
+/* Al Sah-him Archery Club */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* header */
+header {
+  background-color: #222;
+  padding: 12px 20px;
+  overflow: hidden;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-left img {
+  height: 55px;
+  vertical-align: middle;
+}
+
+.club-title {
+  color: #ee2d21;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+nav {
+  float: right;
+  padding-top: 16px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #ee2d21;
+}
+
+nav .current {
+  color: #ee2d21;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/* red banner */
+.banner {
+  background-color: #ee2d21;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.banner h1 {
+  margin: 0;
+}
+
+/* main content */
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.content a {
+  color: #ee2d21;
+}
+
+.section-title {
+  color: #ee2d21;
+  border-bottom: 2px solid #ee2d21;
+  padding-bottom: 5px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro p {
+  max-width: 650px;
+  margin: 0 auto 10px;
+}
+
+.features {
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.feature {
+  float: left;
+  width: 33.33%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.feature h3 {
+  color: #ee2d21;
+}
