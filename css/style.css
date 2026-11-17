@@ -107,6 +107,16 @@ nav .current {
   color: #ee2d21;
 }
 
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #ee2d21;
+  padding: 10px 25px;
+  margin-top: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* cards on home page */
 .cards {
   overflow: hidden;
