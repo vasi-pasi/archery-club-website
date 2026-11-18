@@ -195,3 +195,29 @@ footer {
   object-fit: cover;
   margin: 20px 0;
 }
+
+/* about page */
+.info-row {
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.info-box {
+  float: left;
+  width: 46%;
+  margin-right: 4%;
+  background-color: #f5f5f5;
+  padding: 15px 20px;
+  border-left: 4px solid #ee2d21;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.info-box:nth-child(2n) {
+  margin-right: 0;
+}
+
+.info-box h3 {
+  color: #ee2d21;
+  margin-top: 0;
+}
