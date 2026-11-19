@@ -306,3 +306,41 @@ aside h3 {
   color: #ee2d21;
   margin-top: 0;
 }
+
+/* events page */
+.event-month {
+  margin-bottom: 35px;
+}
+
+.event-month h3 {
+  color: #ee2d21;
+}
+
+.event-item {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+  overflow: hidden;
+}
+
+.event-date {
+  float: left;
+  width: 70px;
+  font-weight: bold;
+  color: #ee2d21;
+}
+
+.event-details {
+  float: left;
+  width: calc(100% - 80px);
+}
+
+.event-details h4 {
+  margin: 0 0 5px;
+}
+
+.audience-label {
+  color: #ee2d21;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
