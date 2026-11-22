@@ -2,35 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Al Sah-him Archery Club</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header role="banner">
   <div class="header-left">
     <img src="club-logo.png" alt="Club logo">
     <span class="club-title">Al Sah-him Archery Club</span>
   </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <span class="current">About</span>
-    <a href="membership.html">Membership</a>
-    <a href="events.html">Events</a>
-    <a href="reviews.html">Reviews</a>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><span class="current">About</span></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
   </nav>
 </header>
 
-<main>
+<main id="main-content">
 
-  <section class="banner">
-    <h1>About Our Club</h1>
+  <section class="banner" aria-labelledby="banner-heading">
+    <h1 id="banner-heading">About Our Club</h1>
   </section>
 
   <div class="content">
 
-    <section>
-      <h2 class="section-title">A Journey Through Time</h2>
+    <section aria-labelledby="history-heading">
+      <h2 id="history-heading" class="section-title">A Journey Through Time</h2>
       <p>We can trace the history of the club and its former leaders through history to the great Master Bowman Talia.</p>
 
       <img class="img-banner" src="images/AdobeStock_421220154.jpeg" alt="Traditional bow and arrows">
@@ -42,7 +47,7 @@
           <p>Founded as a gathering of elite marksmen dedicated to mastering the art of the traditional bow.</p>
         </article>
 
-        <div class="timeline-arrow">&rarr;</div>
+        <div class="timeline-arrow" aria-hidden="true">&rarr;</div>
 
         <article class="timeline-block">
           <h3>Talia Era</h3>
@@ -50,7 +55,7 @@
           <p>Under Master Bowman Talia, the club established rigorous training disciplines and tactical traditions that still influence our practices today.</p>
         </article>
 
-        <div class="timeline-arrow">&rarr;</div>
+        <div class="timeline-arrow" aria-hidden="true">&rarr;</div>
 
         <article class="timeline-block">
           <h3>Modern Day</h3>
@@ -60,8 +65,8 @@
       </div>
     </section>
 
-    <section>
-      <h2 class="section-title">The Club Today</h2>
+    <section aria-labelledby="today-heading">
+      <h2 id="today-heading" class="section-title">The Club Today</h2>
 
       <img class="img-banner" src="images/AdobeStock_421220161.jpeg" alt="Indoor archery range">
 
@@ -94,17 +99,20 @@
 
     <img class="img-banner" src="images/AdobeStock_227590828.jpeg" alt="Archer at outdoor range">
 
-    <section>
-      <h2 class="section-title">See Archery in Action</h2>
-      <iframe width="800" height="450" src="https://www.youtube.com/embed/rzj4FFi7wt8" title="Archery demonstration video" allowfullscreen></iframe>
+    <section aria-labelledby="video-heading">
+      <h2 id="video-heading" class="section-title">See Archery in Action</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/rzj4FFi7wt8" title="Archery demonstration video" allowfullscreen></iframe>
+      </div>
     </section>
 
   </div>
 
 </main>
 
-<footer>
-  <p>Al Sah-him Archery Club</p>
+<footer role="contentinfo">
+  <p>Al Sah-him Archery Club &mdash; Northampton Square, London EC1V 0HB</p>
+  <p><a href="tel:02079464587">020 7946 4587</a> | <a href="mailto:archery@example.org">archery@example.org</a></p>
 </footer>
 
 </body>

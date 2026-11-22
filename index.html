@@ -2,36 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Al Sah-him Archery Club - Home</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header role="banner">
   <div class="header-left">
     <img src="club-logo.png" alt="Club logo">
     <span class="club-title">Al Sah-him Archery Club</span>
   </div>
-  <nav>
-    <span class="current">Home</span>
-    <a href="about.html">About</a>
-    <a href="membership.html">Membership</a>
-    <a href="events.html">Events</a>
-    <a href="reviews.html">Reviews</a>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><span class="current">Home</span></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
   </nav>
 </header>
 
-<main>
+<main id="main-content">
 
-  <section class="banner">
-    <h1>Welcome to Al Sah-him Archery Club</h1>
+  <section class="hero" aria-labelledby="hero-heading">
+    <h1 id="hero-heading">Welcome to Al Sah-him Archery Club</h1>
     <p>A welcoming and inclusive archery club in central London.</p>
+    <a href="membership.html" class="btn">Join Our Club</a>
   </section>
 
   <div class="content">
 
-    <section class="intro">
-      <h2 class="section-title">Who We Are</h2>
+    <section class="intro" aria-labelledby="who-heading">
+      <h2 id="who-heading" class="section-title">Who We Are</h2>
       <p>The Al Sah-him Archery Club is a long-established society with roots back to 1013 CE and its current home in central London. We are a welcoming and inclusive archery club that combines centuries of tradition with modern facilities and coaching.</p>
       <p>Whether you're picking up a bow for the first time or competing at an elite level, you'll find your place here.</p>
 
@@ -53,8 +59,8 @@
 
     <img class="img-banner" src="images/AdobeStock_72105116.jpeg" alt="Archery equipment on display">
 
-    <section>
-      <h2 class="section-title">Explore the Club</h2>
+    <section aria-labelledby="explore-heading">
+      <h2 id="explore-heading" class="section-title">Explore the Club</h2>
 
       <div class="cards">
         <article class="card">
@@ -99,8 +105,8 @@
     </div>
     <div class="contact-col">
       <h3>Get in Touch</h3>
-      <p>Phone: 020 7946 4587</p>
-      <p>Email: archery@example.org</p>
+      <p>Phone: <a href="tel:02079464587">020 7946 4587</a></p>
+      <p>Email: <a href="mailto:archery@example.org">archery@example.org</a></p>
       <p><a href="https://www.facebook.com/AlSah-himArchery">Facebook</a> | <a href="https://x.com/AlSah-himArchery">X</a></p>
     </div>
     <div class="contact-col">
@@ -112,8 +118,9 @@
   </div>
 </div>
 
-<footer>
-  <p>Al Sah-him Archery Club</p>
+<footer role="contentinfo">
+  <p>Al Sah-him Archery Club &mdash; Northampton Square, London EC1V 0HB</p>
+  <p><a href="tel:02079464587">020 7946 4587</a> | <a href="mailto:archery@example.org">archery@example.org</a></p>
 </footer>
 
 </body>

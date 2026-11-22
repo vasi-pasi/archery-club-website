@@ -2,32 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reviews - Al Sah-him Archery Club</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header role="banner">
   <div class="header-left">
     <img src="club-logo.png" alt="Club logo">
     <span class="club-title">Al Sah-him Archery Club</span>
   </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="membership.html">Membership</a>
-    <a href="events.html">Events</a>
-    <span class="current">Reviews</span>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><span class="current">Reviews</span></li>
+    </ul>
   </nav>
 </header>
 
-<main>
+<main id="main-content">
 
-  <section class="banner">
-    <h1>What Our Members Say</h1>
+  <section class="banner" aria-labelledby="banner-heading">
+    <h1 id="banner-heading">What Our Members Say</h1>
   </section>
 
   <div class="content">
+
+    <h2 class="section-title">Member Reviews</h2>
 
     <img class="img-banner" src="images/AdobeStock_312269314.jpeg" alt="Club members at an event">
 
@@ -65,15 +72,16 @@
 
 </main>
 
-<aside>
+<aside aria-labelledby="cta-heading">
   <div class="content">
-    <h3>Ready to Join?</h3>
+    <h3 id="cta-heading">Ready to Join?</h3>
     <p>Visit our <a href="membership.html">membership page</a> to see our packages and find the right option for you. Beginners are always welcome — our next induction course starts soon!</p>
   </div>
 </aside>
 
-<footer>
-  <p>Al Sah-him Archery Club</p>
+<footer role="contentinfo">
+  <p>Al Sah-him Archery Club &mdash; Northampton Square, London EC1V 0HB</p>
+  <p><a href="tel:02079464587">020 7946 4587</a> | <a href="mailto:archery@example.org">archery@example.org</a></p>
 </footer>
 
 </body>

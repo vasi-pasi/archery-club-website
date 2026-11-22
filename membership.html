@@ -2,44 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Membership - Al Sah-him Archery Club</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header role="banner">
   <div class="header-left">
     <img src="club-logo.png" alt="Club logo">
     <span class="club-title">Al Sah-him Archery Club</span>
   </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <span class="current">Membership</span>
-    <a href="events.html">Events</a>
-    <a href="reviews.html">Reviews</a>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><span class="current">Membership</span></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
   </nav>
 </header>
 
-<main>
+<main id="main-content">
 
-  <section class="banner">
-    <h1>Membership</h1>
+  <section class="banner" aria-labelledby="banner-heading">
+    <h1 id="banner-heading">Membership</h1>
   </section>
 
   <div class="content">
 
-    <section>
-      <h2 class="section-title">Membership Packages</h2>
+    <section aria-labelledby="pricing-heading">
+      <h2 id="pricing-heading" class="section-title">Membership Packages</h2>
       <p>All memberships grant full access to the ranges, club equipment, and online booking portal. Equipment hire is included in all target bookings and classes.</p>
 
-      <table>
+      <div class="table-wrapper">
+      <table aria-label="Membership pricing table">
+        <caption>Pricing for 2026/27</caption>
+        <thead>
         <tr>
           <th scope="col">Package</th>
           <th scope="col">Annual</th>
           <th scope="col">Monthly</th>
           <th scope="col">Eligibility</th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
           <td><strong>Adult Standard</strong></td>
           <td>&pound;350</td>
@@ -58,11 +68,13 @@
           <td>—</td>
           <td>Two adults and up to two juniors at same address</td>
         </tr>
+      </tbody>
       </table>
+      </div>
     </section>
 
-    <section>
-      <h2 class="section-title">Target Booking</h2>
+    <section aria-labelledby="booking-heading">
+      <h2 id="booking-heading" class="section-title">Target Booking</h2>
 
       <img class="img-banner" src="images/AdobeStock_574899922.jpeg" alt="Archer aiming at target">
 
@@ -81,8 +93,8 @@
 
     <img class="img-banner" src="images/AdobeStock_54292382.jpeg" alt="Archer drawing bow">
 
-    <section>
-      <h2 class="section-title">Training Courses</h2>
+    <section aria-labelledby="courses-heading">
+      <h2 id="courses-heading" class="section-title">Training Courses</h2>
 
       <div class="courses">
         <article class="course-box">
@@ -106,18 +118,19 @@
 
 </main>
 
-<aside>
+<aside aria-labelledby="aside-heading">
   <div class="content">
-    <h3>Opening Hours</h3>
+    <h3 id="aside-heading">Opening Hours</h3>
     <p><strong>Tue–Fri:</strong> 12:00 PM – 9:00 PM<br>
     <strong>Sat–Sun:</strong> 9:00 AM – 6:00 PM<br>
     <strong>Monday:</strong> Closed (maintenance)</p>
-    <p style="margin-top:10px"><strong>Address:</strong> Northampton Square, London EC1V 0HB</p>
+    <p><strong>Address:</strong> Northampton Square, London EC1V 0HB</p>
   </div>
 </aside>
 
-<footer>
-  <p>Al Sah-him Archery Club</p>
+<footer role="contentinfo">
+  <p>Al Sah-him Archery Club &mdash; Northampton Square, London EC1V 0HB</p>
+  <p><a href="tel:02079464587">020 7946 4587</a> | <a href="mailto:archery@example.org">archery@example.org</a></p>
 </footer>
 
 </body>

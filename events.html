@@ -2,42 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events - Al Sah-him Archery Club</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header role="banner">
   <div class="header-left">
     <img src="club-logo.png" alt="Club logo">
     <span class="club-title">Al Sah-him Archery Club</span>
   </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="membership.html">Membership</a>
-    <span class="current">Events</span>
-    <a href="reviews.html">Reviews</a>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><span class="current">Events</span></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
   </nav>
 </header>
 
-<main>
+<main id="main-content">
 
-  <section class="banner">
-    <h1>Events &amp; Competitions</h1>
+  <section class="banner" aria-labelledby="banner-heading">
+    <h1 id="banner-heading">Events &amp; Competitions</h1>
   </section>
 
   <div class="content">
 
-    <section>
-      <h2 class="section-title">Club Events</h2>
+    <section aria-labelledby="club-events-heading">
+      <h2 id="club-events-heading" class="section-title">Club Events</h2>
       <p class="audience-label">For current and potential members</p>
 
       <div class="event-month">
         <h3>October 2026</h3>
 
         <article class="event-item">
-          <div class="event-date">10 Oct</div>
+          <div class="event-date-box"><span class="day">10</span><span class="month">Oct</span></div>
           <div class="event-details">
             <h4>Autumn Equinox Shoot <em>(Saturday)</em></h4>
             <p>Seasonal target competition featuring traditional and compound categories.</p>
@@ -45,7 +50,7 @@
         </article>
 
         <article class="event-item">
-          <div class="event-date">13 Oct</div>
+          <div class="event-date-box"><span class="day">13</span><span class="month">Oct</span></div>
           <div class="event-details">
             <h4>Beginner Induction Intake <em>(Tuesday)</em></h4>
             <p>Launch of the final autumn 6-week foundational training course.</p>
@@ -53,7 +58,7 @@
         </article>
 
         <article class="event-item">
-          <div class="event-date">30 Oct</div>
+          <div class="event-date-box"><span class="day">30</span><span class="month">Oct</span></div>
           <div class="event-details">
             <h4>Halloween Night Shoot <em>(Friday)</em></h4>
             <p>A festive, themed evening of shooting at trick targets under low-light conditions.</p>
@@ -65,7 +70,7 @@
         <h3>November 2026</h3>
 
         <article class="event-item">
-          <div class="event-date">15 Nov</div>
+          <div class="event-date-box"><span class="day">15</span><span class="month">Nov</span></div>
           <div class="event-details">
             <h4>The Talia Memorial Cup <em>(Sunday)</em></h4>
             <p>Our historic annual club championship honouring our past Master Bowman.</p>
@@ -73,7 +78,7 @@
         </article>
 
         <article class="event-item">
-          <div class="event-date">19 Nov</div>
+          <div class="event-date-box"><span class="day">19</span><span class="month">Nov</span></div>
           <div class="event-details">
             <h4>Indoor Distance Masterclass <em>(Thursday)</em></h4>
             <p>Form correction workshop for 18-metre winter tournament preparation.</p>
@@ -81,7 +86,7 @@
         </article>
 
         <article class="event-item">
-          <div class="event-date">28 Nov</div>
+          <div class="event-date-box"><span class="day">28</span><span class="month">Nov</span></div>
           <div class="event-details">
             <h4>Equipment Maintenance Workshop <em>(Saturday)</em></h4>
             <p>Hands-on seminar on bow tuning, string waxing, and arrow fletching.</p>
@@ -93,7 +98,7 @@
         <h3>December 2026</h3>
 
         <article class="event-item">
-          <div class="event-date">9 Dec</div>
+          <div class="event-date-box"><span class="day">9</span><span class="month">Dec</span></div>
           <div class="event-details">
             <h4>Annual General Meeting <em>(Wednesday)</em></h4>
             <p>Review of the club's 2026 milestones and voting on the 2027 committee.</p>
@@ -101,7 +106,7 @@
         </article>
 
         <article class="event-item">
-          <div class="event-date">12 Dec</div>
+          <div class="event-date-box"><span class="day">12</span><span class="month">Dec</span></div>
           <div class="event-details">
             <h4>Yuletide Social &amp; Feast <em>(Saturday)</em></h4>
             <p>Holiday celebration and dinner for members and their families.</p>
@@ -109,7 +114,7 @@
         </article>
 
         <article class="event-item">
-          <div class="event-date">20 Dec</div>
+          <div class="event-date-box"><span class="day">20</span><span class="month">Dec</span></div>
           <div class="event-details">
             <h4>Frostbite Open <em>(Sunday)</em></h4>
             <p>End-of-year outdoor endurance shoot followed by hot refreshments.</p>
@@ -120,8 +125,8 @@
 
     <img class="img-banner" src="images/AdobeStock_436331541.jpeg" alt="Outdoor archery competition">
 
-    <section>
-      <h2 class="section-title">Inter-Club Competitions</h2>
+    <section aria-labelledby="interclub-heading">
+      <h2 id="interclub-heading" class="section-title">Inter-Club Competitions</h2>
       <p class="audience-label">For members of other clubs looking to compete</p>
       <p>Our Q4 2026 calendar of matches against clubs across London and the surrounding counties.</p>
 
@@ -131,7 +136,7 @@
         <h3>October 2026</h3>
 
         <article class="event-item">
-          <div class="event-date">18 Oct</div>
+          <div class="event-date-box"><span class="day">18</span><span class="month">Oct</span></div>
           <div class="event-details">
             <h4>London Inter-Club Target League <em>(Sunday)</em></h4>
             <p>Opening stage match against the North London Bowmen.</p>
@@ -139,7 +144,7 @@
         </article>
 
         <article class="event-item">
-          <div class="event-date">24 Oct</div>
+          <div class="event-date-box"><span class="day">24</span><span class="month">Oct</span></div>
           <div class="event-details">
             <h4>The Greater London Autumn Open <em>(Saturday)</em></h4>
             <p>Regional multi-club target tournament hosted at our central London grounds.</p>
@@ -151,7 +156,7 @@
         <h3>November 2026</h3>
 
         <article class="event-item">
-          <div class="event-date">8 Nov</div>
+          <div class="event-date-box"><span class="day">8</span><span class="month">Nov</span></div>
           <div class="event-details">
             <h4>Thames Valley Winter League <em>(Sunday)</em></h4>
             <p>Away leg competition against the Richmond Archers.</p>
@@ -159,7 +164,7 @@
         </article>
 
         <article class="event-item">
-          <div class="event-date">21 Nov</div>
+          <div class="event-date-box"><span class="day">21</span><span class="month">Nov</span></div>
           <div class="event-details">
             <h4>The Master Bowman Invitational <em>(Saturday)</em></h4>
             <p>Tri-club championship match featuring elite recurve teams.</p>
@@ -171,7 +176,7 @@
         <h3>December 2026</h3>
 
         <article class="event-item">
-          <div class="event-date">6 Dec</div>
+          <div class="event-date-box"><span class="day">6</span><span class="month">Dec</span></div>
           <div class="event-details">
             <h4>Capital Indoor Challenge <em>(Sunday)</em></h4>
             <p>Multi-club 18-metre tournament hosted by Southwark Archery Club.</p>
@@ -179,7 +184,7 @@
         </article>
 
         <article class="event-item">
-          <div class="event-date">13 Dec</div>
+          <div class="event-date-box"><span class="day">13</span><span class="month">Dec</span></div>
           <div class="event-details">
             <h4>The Tri-County Frostbite Shield <em>(Sunday)</em></h4>
             <p>Joint end-of-year outdoor endurance match against Surrey and Essex clubs.</p>
@@ -192,8 +197,9 @@
 
 </main>
 
-<footer>
-  <p>Al Sah-him Archery Club</p>
+<footer role="contentinfo">
+  <p>Al Sah-him Archery Club &mdash; Northampton Square, London EC1V 0HB</p>
+  <p><a href="tel:02079464587">020 7946 4587</a> | <a href="mailto:archery@example.org">archery@example.org</a></p>
 </footer>
 
 </body>
